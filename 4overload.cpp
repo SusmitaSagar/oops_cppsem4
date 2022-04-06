@@ -2,11 +2,9 @@
 //can be alternatively achieved by overloading
 #include <iostream>
 using namespace std;
-int power(int x, int y)
-{
+int power(int x, int y){
     int answer = 1;
-    for (int i = 1; i <= y; i++)
-    {
+    for (int i = 1; i <= y; i++) {
         answer = answer * x;
     }
     return answer;
