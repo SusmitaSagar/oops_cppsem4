@@ -10,21 +10,17 @@ class construct{
         area = 0;
     }
     // parametrised constructor{2 parameter}
-    construct(int a, int b)
-    {
+    construct(int a, int b){
         area = a*b;
     }
-    void display()
-    {
+    void display(){
         cout<<area<<endl;
     }
 };
 int main(){
     construct object;
     construct object2(5,6);
-
     object.display();
     object2.display();
     return 1;
-
 }
