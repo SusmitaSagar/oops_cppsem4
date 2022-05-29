@@ -2,26 +2,18 @@
 
 #include <iostream>
 using namespace std;
-
 int count = 0;
-
 class Num {   //Creating class
     public:
     Num(){  // constructor
         count++;
         cout<<" The Constructor is called for "<<count<<endl;
-        
     }
-    
     ~ Num(){   // creating the destructor
-        
         cout<<" The constructor is destroyed for "<<count<<endl;
         count--;
-        
     }
-
 };
-
 int main(){
    cout<<"Entering the main function."<<endl;
    cout<<"Creating the first object."<<endl;
@@ -33,9 +25,5 @@ int main(){
      cout<<"Exiting the block."<<endl;
    }
    cout<<"Coming back to the main block."<<endl;
-
-
-
-
     return 0;
 }
