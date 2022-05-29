@@ -1,26 +1,21 @@
 //Creating class Time to store time in hours and minutes. Write a friend function to add two Time objects.
-
 #include <iostream>
 using namespace std;
-
 class Time
 {
 private:
     int hours, minutes;
-
 public:
     void getTime(int h, int m)
     {
         hours = h;
         minutes = m;
     }
-
     void display()
     {
         cout << "The hours are " << hours << endl;
         cout << "The minutes are " << minutes << endl;
     }
-
     friend Time sum(Time T1, Time T2)
     {
         Time T;
@@ -31,18 +26,14 @@ public:
         return T;
     }
 };
-
 int main()
 {
-
     Time t1, t2, t3;
     t1.getTime(1, 30);
     t2.getTime(2, 40);
-
     t1.display();
     t2.display();
     t3 = sum(t1, t2);
     t3.display();
-
     return 0;
 }
